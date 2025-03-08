@@ -1,0 +1,76 @@
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+.container > form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header{
+    border: 1px solid rgba(0, 0, 0, .15);
+    padding: 20px;
+    margin-bottom: 40px;
+
+}
+
+header > h1{
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+form > label{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+form > input:has(+label), form > textarea:has(+label), form > .img-file > input[type="file"]{
+    margin-bottom: 30px;
+    padding: 15px;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    font-weight: 300;
+}
+
+form > textarea{
+    resize: none;
+    height: 200px;
+    overflow-y: auto;
+
+}
+
+form > input[type="submit"]{
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    height: 60px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+form > input[type="submit"]:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transition: .2s all ease-in-out;
+
+
+}
+
+form > .img-file{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+form > .img-file > img{
+    width: 100px;
+}

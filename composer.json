@@ -1,0 +1,17 @@
+{
+    "name": "progma/blog",
+    "autoload": {
+        "psr-4": {
+            "Progma\\Blog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "OttozaoJooj",
+            "email": "otto.mozale007@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
