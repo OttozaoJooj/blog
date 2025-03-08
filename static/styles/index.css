@@ -1,0 +1,146 @@
+
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .15);
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    background-color: white;
+    z-index: 5;
+
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    width: 1290px;
+}
+
+.header-content > .ipt-search > input{
+    width: 790px;
+    height: 50px;
+    padding: 0px 15px;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+   
+}
+
+.header-content > .ipt-search > input:focus{
+    border: 2px solid rgba(0, 0, 0, 1);
+
+}
+
+.header-content > .btn-painel > a{
+    width: 135px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: black;
+    font-size: 2.0rem;
+    font-weight: 500;
+    background-color: #E6E6E6;
+
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(92px + 35px) ;
+    width: 1000px;
+    row-gap: 35px;
+    
+}
+
+.posts > a{
+
+    transition: 0.1s ease-in-out all;
+}
+
+.posts > a:hover{
+    transform: scale(1.025);
+    transition: 0.1s ease-in-out all;
+
+}
+
+.posts > .post:last-child{
+    margin-bottom: 50px;
+
+}   
+
+.post{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+
+}
+
+.post > .line-column > span{
+    display: block;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.post > img{
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+}
+.post > .post-content {
+    padding-right: 50px;
+    align-self: flex-start;
+    margin-top: 25px;
+
+}
+
+.post > .post-content > .title-date-post {
+    margin-bottom: 15px;
+}
+
+.post > .post-content > .title-date-post > h1{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+
+}
+
+.post > .post-content > .title-date-post > span{
+    font-size: 1.0rem;
+    font-weight: 500;
+}
+
+.post > .post-content > .text-body-post > p{
+    font-size: 1.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 15%;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    height: 51px;
+    width: 75%;
+    background-color: white;
+
+}
+
